@@ -1,0 +1,50 @@
+/* Color #E5E5E5 */
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #EBECF0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: grid;
+    grid-template-rows: 20vh 20vh 20vh 20vh;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+}
+section{
+    background-color: aqua;
+}
+.box_fleche{
+    grid-area: 1/1/2/2;
+}
+.box_menu{
+    grid-area: 1/2/2/4;
+}
+.box_search{
+    grid-area: 1/4/2/5;
+}
+.box_point{
+    grid-area: 2/1/3/2;
+}
+.box_button{
+    grid-area: 2/2/3/4;
+}
+.box_genre{
+    grid-area: 2/4/3/5;
+}
+.box_maison{
+    grid-area: 3/1/4/3;
+}
+.box_scan{
+    grid-area: 3/4/4/5;
+}
+.box_barre{
+    grid-area: 4/1/5/4;
+}
+.box_aa{
+    grid-area: 4/4/5/5;
+}
