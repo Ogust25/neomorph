@@ -1,5 +1,7 @@
 /* Color #E5E5E5 */
 
+
+/* Core */
 body{
     padding: 0;
     margin: 0;
@@ -9,6 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Palanquin Dark', sans-serif;
 }
 main{
     display: grid;
@@ -16,35 +19,158 @@ main{
     grid-template-columns: 20vw 20vw 20vw 20vw;
 }
 section{
-    background-color: aqua;
+    margin: 10px;
+    border-radius: 50px;
 }
+
+/* Fleches */
 .box_fleche{
     grid-area: 1/1/2/2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+.box_fleche div{
+    
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #fbfdff, #d4d4d8);
+    box-shadow:  15px 15px 64px #949597,
+                 -33px -33px 64px #ffffff;
+}
+.box_fleche div:active{
+    border-radius: 15px;
+    background: #EBECF0;
+    box-shadow: inset 15px 15px 64px #c3c4c7,
+                inset -15px -15px 64px #ffffff;
+}
+.box_fleche img{
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Menu chelou */
 .box_menu{
     grid-area: 1/2/2/4;
 }
 .box_search{
     grid-area: 1/4/2/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* Btn cercle */
 .box_point{
     grid-area: 2/1/3/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.box_point div{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #fbfdff, #d4d4d8);
+    box-shadow:  17px 17px 33px #bcbdc0,
+                -17px -17px 33px #ffffff;
+}
+.box_point div:active{
+    border-radius: 50%;
+    background: #EBECF0;
+    box-shadow: inset 17px 17px 33px #bcbdc0,
+                inset -17px -17px 33px #ffffff;
+}
+
+/* Button */
 .box_button{
     grid-area: 2/2/3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.box_button div{
+    width: 20vw;
+    height: 4vw;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #fbfdff, #d4d4d8);
+    box-shadow:  17px 17px 33px #bcbdc0,
+                -17px -17px 33px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #BCBECB;
+}
+
+/* Btn Male / Female */
 .box_genre{
     grid-area: 2/4/3/5;
 }
+
+/* Btn Maison */
 .box_maison{
     grid-area: 3/1/4/3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+.box_maison div{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #fbfdff, #d4d4d8);
+    box-shadow:  17px 17px 33px #bcbdc0,
+                -17px -17px 33px #ffffff;
+}
+.box_maison div:active{
+    border-radius: 50%;
+    background: #EBECF0;
+    box-shadow: inset 17px 17px 33px #bcbdc0,
+                inset -17px -17px 33px #ffffff;
+}
+
+/* Btn scan stop */
 .box_scan{
     grid-area: 3/4/4/5;
 }
+
+/* 2 Barre  */
 .box_barre{
     grid-area: 4/1/5/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
+.box_barre div{
+    width: 80%;
+    height: 2vw;
+    border: black 1px solid;
+    border-radius: 20px;
+}
+
+/* Carré Aa */
 .box_aa{
     grid-area: 4/4/5/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box_aa div{
+    width: 9vw;
+    height: 9vw;
+    border-radius: 20px;
+background: linear-gradient(145deg, #fbfdff, #d4d4d8);
+box-shadow:  33px 33px 64px #8b8b8e,
+             -33px -33px 64px #ffffff;
+             display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: #2C39F6;
 }
