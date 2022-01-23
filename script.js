@@ -1,5 +1,3 @@
-/* btn cercle a swap quand clic
-btn male/female en mode on/off
-menu chelou en mode selection a 4 choix
-btn scan/stop a sawp
-barre de chargement */
+document.querySelector(".scroll").oninput = function() {
+    this.style.background = 'linear-gradient(to right, gray 0%, gray ' + this.value + '%, #EBECF0 ' + this.value + '%, #EBECF0 100%)'
+  };

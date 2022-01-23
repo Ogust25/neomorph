@@ -24,7 +24,7 @@ section{
 }
 .gradient{
     background-color: red;
-    background-image: linear-gradient(180deg, rgba(53,57,65,1) 10%, rgba(140,150,170,1) 70%);
+    background-image: linear-gradient(180deg, #6D7382 20%, #929AAE 80%);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -104,7 +104,7 @@ section{
     cursor: pointer;
 }
 .box_menu [type=radio]:checked + label{
-    background: linear-gradient(180deg, rgba(53,57,65,1) 10%, rgba(140,150,170,1) 50%);;
+    background: linear-gradient(180deg, #6D7382 20%, #929AAE 80%);
     color: #EBECF0;
 }
 .borderr1{
@@ -316,10 +316,25 @@ section{
     height: 2vw;
     border-radius: 20px;
 }
-.scroll{
-    background: #EBECF0;
-    box-shadow:  10px 10px 20px #a2a3a6,
-                 -10px -10px 20px #ffffff;
+.box_barre input{
+    width: 80%;
+    height: 2vw;
+    border-radius: 20px;
+    background: linear-gradient(to right, grey 0%, grey 50%, #EBECF0 50%, #EBECF0 100%);
+    box-shadow:  5px 5px 20px #a2a3a6,
+    -5px -5px 20px #ffffff;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+}
+.scroll::-webkit-slider-thumb {
+    appearance: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow:  10px 10px 20px #a2a3a6;
 }
 
 /* Carré Aa */
