@@ -5,45 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b636e708af.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Projet Néo</title>
 </head>
 <body>
     <main>
         <section class="box_fleche">
-            <div>
-                <img src="/image/arrow_left.png" alt="left arrow">
-            </div>
-            <div>
-                <img src="/image/arrow_right.png" alt="right arrow">
-            </div>
+            <div class="neo_on"><i class="fas fa-chevron-left"></i></div>
+            <div class="neo_on"><i class="fas fa-chevron-right"></i></div>
         </section>
         <section class="box_menu">
-            <div></div>
+            <div class="box_select">
+                <div class="menu_select borderr1 borderr"><i class="fas fa-align-justify"></i></div>
+                <div class="menu_select borderr"><i class="fas fa-align-center"></i></div>
+                <div class="menu_select borderr"><i class="fas fa-align-left"></i></div>
+                <div class="menu_select borderr2"><i class="fas fa-align-right"></i></div>
+            </div>
         </section>
         <section class="box_search">
-            <input type="button" value="">
-            <input type="text">
+            <div class="neo_off">
+                <form>
+                    <i class="zoom fas fa-search"></i>
+                    <input class="research" type="text" placeholder="Search">
+                </form>
+            </div>
         </section>
         <section class="box_point">
-            <div></div>
+            <div class="neo_on"><i class="far fa-circle"></i></div>
         </section>
         <section class="box_button">
-            <div>Button</div>
+            <div class="neo_on">Button</div>
         </section>
         <section class="box_genre">genre</section>
         <section class="box_maison">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="neo_on"><i class="fas fa-home gradient"></i></div>
+            <div class="neo_on"><i class="fas fa-user gradient"></i></div>
+            <div class="neo_on"><i class="fas fa-star gradient"></i></div>
         </section>
-        <section class="box_scan">scan</section>
+        <section class="box_scan">
+            <div class="neo_flat">Scan</div>
+        </section>
         <section class="box_barre">
             <div></div>
             <div></div>
         </section>
         <section class="box_aa">
-            <div>Aa</div>
+            <div class="neo_on">Aa</div>
         </section>
     </main>
 </body>

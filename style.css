@@ -15,12 +15,37 @@ body{
 }
 main{
     display: grid;
-    grid-template-rows: 20vh 20vh 20vh 20vh;
-    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 15vh 15vh 20vh 30vh;
+    grid-template-columns: 15vw 15vw 15vw 15vw;
 }
 section{
     margin: 10px;
     border-radius: 50px;
+}
+.gradient{
+    background-color: red;
+    background-image: linear-gradient(180deg, rgba(53,57,65,1) 10%, rgba(140,150,170,1) 70%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.neo_on{
+    background: linear-gradient(145deg, #fbfdff, #d4d4d8);
+    box-shadow:  10px 10px 25px #a2a3a6,
+                 -10px -10px 25px #ffffff;
+}
+.neo_flat{
+    background: #EBECF0;
+    box-shadow:  10px 10px 20px #a2a3a6,
+                 -10px -10px 20px #ffffff;
+}
+.neo_off, .neo_on:active, .neo_flat:active{
+    background: #EBECF0;
+    box-shadow: inset 0px 5px 10px #a2a3a6,
+                inset 0px -5px 10px #ffffff;
 }
 
 /* Fleches */
@@ -31,37 +56,90 @@ section{
     align-items: center;
 }
 .box_fleche div{
-    
     width: 4vw;
     height: 4vw;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    background: linear-gradient(145deg, #fbfdff, #d4d4d8);
-    box-shadow:  15px 15px 64px #949597,
-                 -33px -33px 64px #ffffff;
-}
-.box_fleche div:active{
-    border-radius: 15px;
-    background: #EBECF0;
-    box-shadow: inset 15px 15px 64px #c3c4c7,
-                inset -15px -15px 64px #ffffff;
-}
-.box_fleche img{
-    max-width: 80%;
-    max-height: 80%;
+    font-size: 2em;
+    color: #8c8d92;
 }
 
-/* Menu chelou */
+/* Menu 4 rectangles */
 .box_menu{
     grid-area: 1/2/2/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.box_select{
+    width: 18vw;
+    height: 4vw;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #fbfdff, #d4d4d8);
+    box-shadow:  10px 10px 25px #a2a3a6,
+                 -10px -10px 25px #ffffff;
+    display: flex;
+}
+.menu_select{
+    width: 4.5vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #8c8d92;
+}
+.menu_select:active{
+    background: linear-gradient(180deg, rgba(53,57,65,1) 10%, rgba(140,150,170,1) 50%);;
+    color: #EBECF0;
+}
+.borderr1{
+    border-radius: 10px 0px 0px 10px;
+}
+.borderr2{
+    border-radius: 0px 10px 10px 0px;
+}
+.borderr{
+    border-right: 1px solid #8c8d925b;
+}
+
+/* Barre de recherche */
 .box_search{
     grid-area: 1/4/2/5;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.box_search div{
+    width: 18vw;
+    height: 4vw;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #8c8d92;
+    margin: 0 50px;
+}
+.box_search form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.zoom{
+    margin: 0 20px;
+}
+.research{
+    border: none;
+    background-color: transparent;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 1em;
+    width: 13vw;
+}
+.research:focus{
+    outline: none;
 }
 
 /* Btn cercle */
@@ -75,15 +153,11 @@ section{
     width: 4vw;
     height: 4vw;
     border-radius: 50%;
-    background: linear-gradient(145deg, #fbfdff, #d4d4d8);
-    box-shadow:  17px 17px 33px #bcbdc0,
-                -17px -17px 33px #ffffff;
-}
-.box_point div:active{
-    border-radius: 50%;
-    background: #EBECF0;
-    box-shadow: inset 17px 17px 33px #bcbdc0,
-                inset -17px -17px 33px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #8c8d92;
 }
 
 /* Button */
@@ -94,17 +168,14 @@ section{
     align-items: center;
 }
 .box_button div{
-    width: 20vw;
+    width: 18vw;
     height: 4vw;
     border-radius: 30px;
-    background: linear-gradient(145deg, #fbfdff, #d4d4d8);
-    box-shadow:  17px 17px 33px #bcbdc0,
-                -17px -17px 33px #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    color: #BCBECB;
+    color: #8c8d92;
 }
 
 /* Btn Male / Female */
@@ -122,21 +193,28 @@ section{
 .box_maison div{
     width: 5vw;
     height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
     border-radius: 50%;
-    background: linear-gradient(145deg, #fbfdff, #d4d4d8);
-    box-shadow:  17px 17px 33px #bcbdc0,
-                -17px -17px 33px #ffffff;
-}
-.box_maison div:active{
-    border-radius: 50%;
-    background: #EBECF0;
-    box-shadow: inset 17px 17px 33px #bcbdc0,
-                inset -17px -17px 33px #ffffff;
 }
 
-/* Btn scan stop */
+/* Btn scan/stop */
 .box_scan{
     grid-area: 3/4/4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box_scan div{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2C39F6;
 }
 
 /* 2 Barre  */
@@ -162,13 +240,10 @@ section{
     align-items: center;
 }
 .box_aa div{
-    width: 9vw;
-    height: 9vw;
+    width: 11vw;
+    height: 11vw;
     border-radius: 20px;
-background: linear-gradient(145deg, #fbfdff, #d4d4d8);
-box-shadow:  33px 33px 64px #8b8b8e,
-             -33px -33px 64px #ffffff;
-             display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 5em;
