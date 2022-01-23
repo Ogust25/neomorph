@@ -82,19 +82,28 @@ section{
     box-shadow:  10px 10px 25px #a2a3a6,
                  -10px -10px 25px #ffffff;
     display: flex;
-    cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
-.menu_select{
+.box_menu [type=radio]{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.box_menu [type=radio]+label{
     width: 4.5vw;
     height: 4vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #8c8d92;
-    
 }
-.menu_select:active{
+.box_menu [type=radio] + label{
+    cursor: pointer;
+}
+.box_menu [type=radio]:checked + label{
     background: linear-gradient(180deg, rgba(53,57,65,1) 10%, rgba(140,150,170,1) 50%);;
     color: #EBECF0;
 }
@@ -107,7 +116,6 @@ section{
 .borderr{
     border-right: 1px solid #8c8d925b;
 }
-
 /* Barre de recherche */
 .box_search{
     grid-area: 1/4/2/5;
@@ -183,7 +191,7 @@ section{
     cursor: pointer;
 }
 
-/* Btn Male / Female */
+/* Btn Male/Female */
 .box_genre{
     grid-area: 2/4/3/5;
     display: flex;
