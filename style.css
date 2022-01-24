@@ -316,13 +316,30 @@ section{
     height: 2vw;
     border-radius: 20px;
 }
-.box_barre input{
+.box_barre .charge{
+    width: 80%;
+    height: 2vw;
+    border-radius: 20px;
+    appearance: none;
+    box-shadow: inset 0px 5px 10px #a2a3a6,
+                inset 0px -5px 10px #ffffff;
+
+}
+.charge::-webkit-slider-thumb {
+    appearance: none;
+    width: 70%;
+    height: 30px;
+    border-radius: 30px;
+    background: #2C39F6;
+    cursor: pointer;
+}
+.box_barre .scroll{
     width: 80%;
     height: 2vw;
     border-radius: 20px;
     background: linear-gradient(to right, grey 0%, grey 50%, #EBECF0 50%, #EBECF0 100%);
     box-shadow:  5px 5px 20px #a2a3a6,
-    -5px -5px 20px #ffffff;
+                -5px -5px 20px #ffffff;
     outline: none;
     transition: background 450ms ease-in;
     -webkit-appearance: none;
