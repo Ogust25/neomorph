@@ -323,12 +323,11 @@ section{
     appearance: none;
     box-shadow: inset 0px 5px 10px #a2a3a6,
                 inset 0px -5px 10px #ffffff;
-
 }
 .charge::-webkit-slider-thumb {
     appearance: none;
     width: 70%;
-    height: 30px;
+    height: 2vw;
     border-radius: 30px;
     background: #2C39F6;
     cursor: pointer;
@@ -379,7 +378,6 @@ section{
     body{
         display: flex;
         align-items: start;
-        
     }
     main{
         display: flex;
@@ -387,6 +385,9 @@ section{
         flex-direction: column;
         padding: 0;
         margin: 0;
+    }
+    section{
+        margin: 3vw 0;
     }
 
     /* Search */
@@ -412,28 +413,70 @@ section{
         border-radius: 40px;
     }
 
-    /* Menu 4 rectangles */
+    /* 3 Btn */
     .box_maison{
         order: 3;
     }
+    .box_maison div{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    /* btn Scan/Stop */
     .box_scan{
         order: 4;
     }
+    .box_scan div{
+        width: 40vw;
+        height: 40vw;
+    }
+
+    /* Btn cercle */
     .box_point{
         order: 5;
     }
+    .box_point div{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    /* Button */
     .box_button{
         order: 6;
     }
+    .box_button div{
+        width: 80vw;
+        height: 20vw;
+    }
+
+    /* Menu 4 rect */
     .box_menu{
         order: 7;
     }
+    .box_menu div{
+        width: 80vw;
+        height: 20vw;
+    }
+
+    /* Btn Aa */
     .box_aa{
         order: 8;
     }
+    .box_aa div{
+        width: 40vw;
+        height: 40vw;
+    }
+
+    /* Brn fleches */
     .box_fleche{
         order: 9;
     }
+    .box_fleche div{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    /* 2 barres */
     .box_barre{
         display: none;
     }
